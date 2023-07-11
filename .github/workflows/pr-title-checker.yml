@@ -14,5 +14,5 @@ jobs:
     steps:
       - uses: fgiuliani/jira-issue-key-checker@v1.0.0
         with:
-          TOKEN_GITHUB: ${{ secrets.TOKEN_GITHUB }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
           pass_on_octokit_error: false
