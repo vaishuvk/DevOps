@@ -15,4 +15,5 @@ jobs:
       - uses: vaishuvk/jira-issue-key-checker@v1
         with:
           TOKEN_GITHUB: ${{ secrets.TOKEN_GITHUB }}
-          pass_on_octokit_error: false
+          jira-prefix: "ABC"
+#           pass_on_octokit_error: false
