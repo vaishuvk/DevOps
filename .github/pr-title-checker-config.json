@@ -1,0 +1,14 @@
+{
+  "LABEL": {
+    "name": "PR title needs formatting",
+    "color": "EEEEEE"
+  },
+  "CHECKS": {
+    "regexp": "docs\\(v[0-9]\\): "
+  },
+  "MESSAGES": {
+    "success": "All OK",
+    "failure": "Failing CI test",
+    "notice": ""
+  }
+}
