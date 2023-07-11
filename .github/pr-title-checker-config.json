@@ -4,7 +4,7 @@
     "color": "EEEEEE"
   },
   "CHECKS": {
-    "regexp": "docs\\(v[0-9]\\): "
+    "regexp": "docs\\b[A-Z][A-Z0-9_]+-[1-9][0-9]*"
   },
   "MESSAGES": {
     "success": "All OK",
