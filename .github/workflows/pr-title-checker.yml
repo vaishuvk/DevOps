@@ -1,6 +1,6 @@
-name: "PR Title Checker"
+name: "PR-title Checker"
 on:
-  pull_request_target:
+  pull_request:
     types:
       - opened
       - edited
@@ -9,11 +9,11 @@ on:
       - unlabeled
 
 jobs:
-  check:
+  publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: thehanimo/pr-title-checker@v1.4.0
+      - uses: fgiuliani/jira-issue-key-checker@v1.0.0
         with:
           GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
           pass_on_octokit_error: false
-          configuration_path: .github/pr-title-checker-config.json #(optional. defaults to .github/pr-title-checker-config.json)
+          configuration_path: .github/pr-title-checker.js #(optional. defaults to .github/pr-title-checker-config.js)
